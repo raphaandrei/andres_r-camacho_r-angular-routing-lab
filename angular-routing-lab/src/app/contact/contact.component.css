@@ -1,0 +1,35 @@
+.contact-section {
+    padding: 60px 0;
+  }
+  
+  .contact-section h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #007bff;
+  }
+  
+  .contact-section p {
+    font-size: 1.1rem;
+    color: #666;
+  }
+  
+  .contact-section .form-control {
+    border-radius: 0;
+    border: 1px solid #ddd;
+  }
+  
+  .contact-section .form-control:focus {
+    border-color: #007bff;
+    box-shadow: none;
+  }
+  
+  .contact-section .btn-primary {
+    background-color: #007bff;
+    border: none;
+    padding: 10px 30px;
+    font-size: 1rem;
+  }
+  
+  .contact-section .btn-primary:hover {
+    background-color: #0056b3;
+  }
