@@ -1,0 +1,102 @@
+/* Ensure No Margin or Padding on Body & HTML */
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden; /* Prevent horizontal scroll */
+  }
+  
+  /* Make Navbar Bigger */
+  .navbar {
+    height: 80px; /* Adjust height */
+    padding: 20px 0; /* Increase top and bottom padding */
+    font-size: 1.2rem; /* Increase font size */
+    background: #2a0134; /* Dark purple */
+    border-bottom: 3px solid #ff0080; /* Neon pink border */
+  }
+  
+  /* Make Navbar Brand (MyApp) Bigger */
+  .navbar-brand {
+    font-size: 1.8rem; /* Bigger text */
+    font-weight: bold; /* Make it stand out */
+    margin-left: 0 !important;
+    padding-left: 15px;
+    color: #ffffff !important; /* Neon pink */
+  }
+  
+  /* Increase Navbar Links Size */
+  .navbar-nav .nav-link {
+    font-size: 1.2rem; /* Bigger menu items */
+    padding: 10px 15px;
+    color: #ffffff !important;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .navbar-nav .nav-link:hover {
+    color: #7a67ee !important; /* Soft blue on hover */
+  }
+  
+  /* Footer Styling */
+  .footer {
+    background: #2a0134; /* Dark purple */
+    color: #ffffff;
+    text-align: center;
+    padding: 15px 0;
+    border-top: 3px solid #ff0080; /* Neon pink border */
+  }         
+  
+  body, .navbar, .footer {
+    font-family: 'Orbitron', sans-serif;
+  }
+  
+   /* Animation for Navbar Brand */
+   .navbar-brand {
+    animation: glow 1.5s infinite alternate;
+  }
+  @keyframes glow {
+    from {
+      text-shadow: 0 0 5px #7a67ee, 0 0 10px #7a67ee;
+    }
+    to {
+      text-shadow: 0 0 15px #7a67ee, 0 0 30px #7a67ee;
+    }
+  }
+
+  /* Smooth Scroll & Hover Effects */
+  .neon-hover {
+    transition: color 0.3s ease-in-out, text-shadow 0.3s;
+  }
+  .neon-hover:hover {
+    color: #0ff;
+    text-shadow: 0 0 8px #0ff, 0 0 12px #0ff;
+  }
+
+  /* Dropdown Animation */
+  .dropdown-menu {
+    display: none;
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: opacity 0.3s ease-in-out, transform 0.3s;
+  }
+  .dropdown:hover .dropdown-menu {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  /* Neon-Themed Button */
+  .btn-neon {
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    background: #ff0080;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 0 10px #ff0080;
+    transition: all 0.3s ease-in-out;
+  }
+  .btn-neon:hover {
+    background: #0ff;
+    box-shadow: 0 0 15px #0ff;
+    transform: scale(1.1);
+  }

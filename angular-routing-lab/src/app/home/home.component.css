@@ -1,14 +1,100 @@
-html, body {
-    height: 100%;
-    margin: 0;
+/* Dark Themed Neon Styles */
+
+/* Hero Section with GIF Background */
+.hero {
+    margin-top: -25px;
+    width: 100vw;
+    height: 80vh;
+    background: url('https://i.redd.it/bpxxqqvps4h91.gif') no-repeat center center/cover;
+    position: relative;
     display: flex;
-    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #0ff;
+    text-align: center;
+    font-family: 'Orbitron', sans-serif;
+    text-shadow: 0 0 15px #0ff, 0 0 30px #00f, 0 0 45px #ff0080;
 }
 
-.content {
-    flex: 1;
+/* Dark Overlay */
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
 }
 
-footer {
-    margin-top: auto;
+.hero .container {
+    position: relative;
+    z-index: 1;
 }
+
+/* Hero Button Styling */
+.hero .btn {
+    font-size: 1.2rem;
+    padding: 12px 24px;
+    background: #0ff;
+    border: none;
+    color: black;
+    border-radius: 5px;
+    box-shadow: 0 0 10px #0ff;
+    transition: 0.3s;
+}
+
+.hero .btn:hover {
+    background: #ff0080;
+    box-shadow: 0 0 20px #ff0080;
+    transform: scale(1.1);
+}
+
+/* Feature Cards */
+.feature-card {
+    background: rgba(10, 10, 10, 0.9);
+    color: white;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s;
+    height: 100%;
+    box-shadow: 0 0 15px #ff0080;
+}
+
+.feature-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 25px #0ff;
+}
+
+.feature-icon {
+    font-size: 3rem;
+    color: #ff0080;
+    margin-bottom: 10px;
+    text-shadow: 0 0 10px #ff0080;
+}
+
+/* Testimonials */
+.blockquote {
+    font-size: 1.2rem;
+    font-style: italic;
+    color: white;
+    background: rgba(10, 10, 10, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px #ff0080;
+}
+
+.carousel-control-prev, .carousel-control-next {
+    filter: invert(100%);
+}
+
+/* Stats Section */
+.container h2 {
+    font-family: 'Orbitron', sans-serif;
+    color: rgb(0, 0, 0);
+}
+
+.display-4 {
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+}
+

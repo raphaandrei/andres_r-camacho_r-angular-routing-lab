@@ -1,39 +1,99 @@
-   <!-- Navbar -->
-   <nav class="navbar navbar-expand-lg navbar-light bg-light">
+<!-- Hero Section -->
+<div class="hero d-flex align-items-center justify-content-center text-white text-center">
     <div class="container">
-        <a class="navbar-brand" routerLink="/home">Home</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto">
-                <li class="nav-item"><a class="nav-link" routerLink="/profile">Profile</a></li>
-                <li class="nav-item"><a class="nav-link" routerLink="/about">About</a></li>
-                <li class="nav-item"><a class="nav-link" routerLink="/admin">Admin</a></li>
-                <li class="nav-item"><a class="nav-link" routerLink="/contact">Contact</a></li>
-            </ul>
+      <h1>Welcome to Aquataine</h1>
+      <p>Your journey starts here</p>
+      <a href="#" class="btn btn-primary">Get Started</a>
+    </div>
+  </div>
+  
+<!-- Features Section -->
+<div class="container mt-5 fade-in">
+    <h2 class="text-center mb-4">Why Choose Us?</h2>
+    <div class="row justify-content-center">
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="card feature-card shadow-lg text-center">
+          <div class="card-body">
+            <i class="bi bi-speedometer2 feature-icon"></i>
+            <h5 class="card-title">Fast & Secure</h5>
+            <p class="card-text">Optimized for speed and security.</p>
+          </div>
         </div>
+      </div>
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="card feature-card shadow-lg text-center">
+          <div class="card-body">
+            <i class="bi bi-people feature-icon"></i>
+            <h5 class="card-title">User-Friendly</h5>
+            <p class="card-text">Simple and intuitive interface.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="card feature-card shadow-lg text-center">
+          <div class="card-body">
+            <i class="bi bi-headset feature-icon"></i>
+            <h5 class="card-title">24/7 Support</h5>
+            <p class="card-text">We're always here to help.</p>
+          </div>
+        </div>
+      </div>
     </div>
-</nav>
-
-<!-- Main Content Wrapper -->
-<div class="content">
-    <!-- Introduction to Angular Routing -->
-    <section class="container mt-4">
-        <h2>Introduction to Angular Routing</h2>
-        <p>Angular Routing allows you to navigate between different views and components in a single-page application (SPA). It helps in creating a seamless user experience without requiring full-page reloads.</p>
-        <p>Using the Angular Router, we can define routes for various pages such as Profile, About, Admin, and Contact. The `<router-outlet>` directive acts as a placeholder where the routed components will be displayed.
+  </div>  
+  
+<!-- Testimonials Section -->
+<div id="testimonialCarousel" class="carousel slide mt-5" data-bs-ride="carousel" data-bs-interval="5000">
+    <div class="carousel-inner">
+      <div class="carousel-item active text-center">
+        <blockquote class="blockquote">
+          <img src="avatar1.jpg" class="testimonial-avatar" alt="Phaolyn Marcelino">
+          <p>"This app has changed my life! It's fast, reliable, and easy to use."</p>
+          <footer class="blockquote-footer">Phaolyn Marcelino</footer>
+        </blockquote>
+      </div>
+      <div class="carousel-item text-center">
+        <blockquote class="blockquote">
+          <img src="avatar2.jpg" class="testimonial-avatar" alt="Jayperson Arreola">
+          <p>"I love the user-friendly interface and amazing support team!"</p>
+          <footer class="blockquote-footer">Jayperson Arreola</footer>
+        </blockquote>
+      </div>
+      <div class="carousel-item text-center">
+        <blockquote class="blockquote">
+          <img src="avatar3.jpg" class="testimonial-avatar" alt="Allen Jayce">
+          <p>"Highly recommend! Everything runs smoothly and securely."</p>
+          <footer class="blockquote-footer">Allen Jayce</footer>
+        </blockquote>
+      </div>
+    </div>
     
+    <!-- Carousel Controls -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+  </div>
 
-    <!-- Main Content -->
-    <div class="container mt-4">
-        <router-outlet></router-outlet>
+<!-- Stats Counter (Animated) -->
+<div class="container mt-5 text-center">
+  <h2>Our Impact</h2>
+  <div class="row">
+    <div class="col-md-4">
+      <h3 class="display-4 count-up" data-target="10000">0</h3>
+      <p>Active Users</p>
     </div>
+    <div class="col-md-4">
+      <h3 class="display-4 count-up" data-target="500">0</h3>
+      <p>Projects Completed</p>
+    </div>
+    <div class="col-md-4">
+      <h3 class="display-4 count-up" data-target="100">0%</h3>
+      <p>Customer Satisfaction</p>
+    </div>
+  </div>
+</div>
 
-
-<!-- Footer -->
-<footer class="bg-dark text-white text-center py-3">
-    <p>&copy; 2025 MyBrand. All rights reserved.</p>
-</footer>
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Back to Top Button -->
+<button id="backToTop" class="btn btn-neon">↑</button>
